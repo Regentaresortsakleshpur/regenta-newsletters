@@ -8,26 +8,41 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      color: #ffffff;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
       background-image: url('https://i.ibb.co/hFnvZ6RD/2024-04-05.jpg');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      color: #ffffff;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.6; /* 60% dim */
+      z-index: -1;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 40px 25px;
     }
+
     h1, h2, h3 {
       color: #ffdd57;
     }
+
     a {
       color: #ffdd57;
       text-decoration: none;
     }
+
     .button {
       display: inline-block;
       margin: 10px 8px 5px 0;
@@ -39,12 +54,15 @@
       font-weight: bold;
       transition: background 0.3s ease;
     }
+
     .button:hover {
       background-color: #ffe985;
     }
+
     .section {
       margin-bottom: 40px;
     }
+
     ul {
       padding-left: 20px;
     }
