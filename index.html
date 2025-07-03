@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-image: url('https://i.ibb.co/nNjR9KmV/13-Nov-2024-01-08-022.jpg');
       background-size: cover;
       background-position: center;
@@ -16,57 +16,97 @@
       color: #fff;
     }
 
-    .content {
-      background-color: rgba(0, 0, 0, 0.6);
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 30px;
-      border-radius: 12px;
-      position: relative;
+    .container {
+      background-color: rgba(0, 0, 0, 0.65);
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 40px;
+      border-radius: 16px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      box-sizing: border-box;
     }
 
-    .logo {
-      position: absolute;
-      top: -50px;
-      left: -50px;
-      padding: 20px;
+    .logo-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
     }
 
-    .logo img {
+    .logo-wrapper img {
       width: 100px;
       height: auto;
+      border-radius: 8px;
     }
 
-    h1, h2, h3 {
+    h2 {
       text-align: center;
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #ffcc00;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      color: #ffcc00;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
     }
 
     a {
       color: #ffcc00;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    ul {
-      margin-left: 20px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    @media screen and (max-width: 600px) {
-      .logo {
-        top: 0;
-        left: 0;
-        padding: 10px;
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin-top: 30px;
       }
 
-      .logo img {
+      .logo-wrapper {
+        justify-content: center;
+      }
+
+      .logo-wrapper img {
         width: 80px;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <div class="logo">
-      <img src="https://i.ibb.co/39tPnCwL/r.jpg" alt="Regenta Resort Sakleshpur Logo" />
+  <div class="container">
+    <div class="logo-wrapper">
+      <img src="https://i.ibb.co/39tPnCwL/r.jpg" alt="Regenta Logo" />
     </div>
 
     <h2>✨ July Newsletter ✨</h2>
@@ -85,19 +125,21 @@
 
     <h3>💼 Special Offer for Repeat Guests</h3>
     <p><strong>Flat 15% OFF</strong> on your next stay + Complimentary Breakfast & Evening Hi-Tea.</p>
-    <p>Booking Period: <strong>1st July – 31st July</strong></p>
-    <p>Stay Dates: Until <strong>30th September</strong></p>
+    <p>Booking Period: <strong>1st July – 31st July</strong><br />
+       Stay Dates: Until <strong>30th September</strong></p>
 
     <p>
-      <a href="mailto:reservations.rrs@royalorchidhotels.com">📧 Book Now via Email</a> or
-      <a href="https://wa.me/919606032173">💬 WhatsApp Us</a>
+      👉 <a href="mailto:reservations.rrs@royalorchidhotels.com">Book via Email</a> &nbsp;|&nbsp;
+      <a href="https://wa.me/919606032173">Chat on WhatsApp</a>
     </p>
 
-    <h3>📍 Quick Contact</h3>
-    <p>📞 9606032173 / 9606032172 / 9606032177</p>
-    <p>📧 reservations.rrs@royalorchidhotels.com</p>
-    <p>🌐 <a href="https://www.royalorchidhotels.com/regenta-resorts-sakleshpur/overview" target="_blank">Hotel Website</a></p>
-    <p>📸 <a href="https://www.instagram.com/regentaresortsakleshpur" target="_blank">Instagram</a></p>
+    <h3>📍 Contact Us</h3>
+    <p>
+      📞 9606032173 / 9606032172 / 9606032177<br />
+      📧 <a href="mailto:reservations.rrs@royalorchidhotels.com">reservations.rrs@royalorchidhotels.com</a><br />
+      🌐 <a href="https://www.royalorchidhotels.com/regenta-resorts-sakleshpur/overview" target="_blank">Visit Website</a><br />
+      📸 <a href="https://www.instagram.com/regentaresortsakleshpur" target="_blank">Instagram</a>
+    </p>
 
     <p style="text-align: center; margin-top: 40px;">We look forward to seeing you again soon!</p>
     <p style="text-align: center;"><strong>Team Regenta Resort Sakleshpur</strong></p>
