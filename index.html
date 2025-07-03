@@ -19,9 +19,26 @@
     .content {
       background-color: rgba(0, 0, 0, 0.6);
       max-width: 800px;
-      margin: 50px auto;
+      margin: 60px auto;
       padding: 30px;
       border-radius: 12px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      padding: 20px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
     }
 
     a {
@@ -29,25 +46,28 @@
       text-decoration: none;
     }
 
-    h1, h2, h3 {
-      text-align: center;
-    }
-
-    .header-image {
-      display: block;
-      width: 120px;
-      height: auto;
-      margin: 0 auto 20px;
-    }
-
     ul {
       margin-left: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .logo {
+        top: 0;
+        left: 0;
+        padding: 10px;
+      }
+
+      .logo img {
+        width: 80px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="content">
-    <img src="https://i.ibb.co/39tPnCwL/r.jpg" alt="Regenta Resort Sakleshpur Logo" class="header-image" />
+    <div class="logo">
+      <img src="https://i.ibb.co/39tPnCwL/r.jpg" alt="Regenta Resort Sakleshpur Logo" />
+    </div>
 
     <h2>✨ July Newsletter ✨</h2>
 
